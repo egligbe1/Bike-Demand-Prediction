@@ -41,6 +41,9 @@
 								<a href="https://github.com/egligbe1/Bike-Demand-Prediction/blob/main/Forecasting%20Bike%20Demand.ipynb" class="text-white" title="Notebook" target="_blank"><i class="fa fa-jupyter fa-2x" aria-hidden="true" style="color: #F37726;" ></i></a>
 						  	</div>
 							<br>
+							<div style="text-align:center; font-weight:bold; font-size:15pt">{{prediction_text}}</div>
+							<div style="text-align:center; font-size:11pt; color:#FF0000;">{{disclaimer}}</div>
+							<br>
 <!--							<p class="lead fw-normal mb-0 me-3" style="text-align:center;">Fill the form</p>-->
 							<form action="{{ url_for('predict')}}" method="post">
 								<div class="row">
@@ -214,8 +217,7 @@
 								</div>
 							</form>
 							<br>
-							<div style="text-align:center; font-weight:bold; font-size:15pt">{{prediction_text}}</div>
-							<div style="text-align:center; font-size:11pt; color:#FF0000;">{{disclaimer}}</div>
+
 						</div>
 					</div>
 				</div>
